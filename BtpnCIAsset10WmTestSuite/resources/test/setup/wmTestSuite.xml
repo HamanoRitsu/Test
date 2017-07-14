@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="BtpnCIAsset10WmTestSuite">
+    <webMethodsTestCase description="this is the success scenario test" name="service1_success">
+        <mock folder="BtpnCIAsset10.src" name="service2">
+            <pipeline filename="resources\test\data\service1_mockservice2_output.xml"/>
+        </mock>
+        <service folder="BtpnCIAsset10.src" name="services1">
+            <input>
+                <file filename="resources\test\data\service1_success_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources\test\data\service1_success_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
